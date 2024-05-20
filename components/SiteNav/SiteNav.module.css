@@ -1,0 +1,62 @@
+/* Mobile Styling */
+.wrapper {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+}
+
+.activeLink,
+.inactiveLink {
+  padding: 2px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.activeLink {
+  color: #000;
+}
+
+.inactiveLink {
+  color: #666;
+}
+
+/* Styling for hover animation */
+
+.activeLink,
+.inactiveLink {
+  position: relative;
+  color: #41444b;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.activeLink::after,
+.inactiveLink::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: currentColor;
+  transition: width 0.3s ease-out;
+}
+
+.activeLink:hover::after,
+.inactiveLink:hover::after {
+  width: 100%;
+}
+
+/* Mobile Hamburger Nav Styling */
+
+/* Desktop styling */
+@media (min-width: 786px) {
+}
