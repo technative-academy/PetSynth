@@ -22,7 +22,7 @@ Your job is to put the website together using React.
  - [Deployed to Netlify](https://petsynth.netlify.app/)
  - Added some initial global css styles, primarily `border-box`, `font` and `color` variables
 
-A little communication took place in **Slack**, mostly as a place to share the odd code snippet, image , otherwise we spent most of the day co-coding via **Google Meet** video conference, taking it in turns to write code under the "assistive direction" of the other team members
+A little communication took place in **Slack**, mostly as a place to share the odd code snippet or image, otherwise we spent most of the day co-coding via **Google Meet** video conference, taking it in turns to write code under the "assistive direction" of the other team members
 </details>
 
 <details>
