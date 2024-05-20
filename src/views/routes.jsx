@@ -1,9 +1,10 @@
 import React from "react";
 
 import About from "./About/About";
+import Ask from "./Ask/Ask";
 import Home from "./Home/Home";
-import Projects from "./Projects/Projects";
 import Root from "./Root";
+import Shop from "./Shop/Shop";
 
 const routes = [
 	{
@@ -19,8 +20,12 @@ const routes = [
 				element: <About />,
 			},
 			{
-				path: "projects",
-				element: <Projects />,
+				path: "ask",
+				element: <Ask />,
+			},
+			{
+				path: "shop",
+				element: <Shop />,
 			},
 		],
 	},
