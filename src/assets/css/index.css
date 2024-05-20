@@ -1,11 +1,43 @@
-html {
-	box-sizing: border-box;
+:root {
+	/* Typography variables */
+	/* Use variable name as value to 'font' {font: var(--p-desktop);} attribute */
+	--h1-desktop: 56px/64px "Roboto", sans-serif;
+	--h1-tablet: 40px/48px "Roboto", sans-serif;
+	--h1-mobile: 32px/40px "Roboto", sans-serif;
+
+	--h2-desktop: 32px/40px "Roboto", sans-serif;
+	--h2-tablet: 32px/40px "Roboto", sans-serif;
+	--h2-mobile: 32px/40px "Roboto", sans-serif;
+
+	--h3-desktop: 24px/36px "Roboto", sans-serif;
+	--h3-tablet: 24px/36px "Roboto", sans-serif;
+	--h3-mobile: 18px/24px "Roboto", sans-serif;
+
+	--h4-desktop: 20px/28px "Roboto", sans-serif;
+	--h4-tablet: 20px/28px "Roboto", sans-serif;
+	--h4-mobile: 16px/24px "Roboto", sans-serif;
+
+	--p-desktop: 16px/24px "Roboto", sans-serif;
+	--p-tablet: 16px/24px "Roboto", sans-serif;
+	--p-mobile: 14px/20px "Roboto", sans-serif;
+
+	/* Colour variables */
+
+	--Black: #1b1c22;
+	--BodyDarker: #7d7d7d;
+	--PrimaryLight: #e7e7e7;
+	--BodyLighter: #f9f9f9;
+	--White: #fff;
+	--Purple: #8900ff;
+	/* --Gradient: #8900ff -> #F50179; */
+
+	--BoxShadow: 0px 0px 20px 0px rgba(27, 28, 34, 0.1);
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html,
@@ -16,9 +48,13 @@ body {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica, sans-serif;
+	font-family: "Roboto", Helvetica, sans-serif;
 }
 
-#root {
-	height: 100%;
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: inherit;
+	margin: inherit;
 }
