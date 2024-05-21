@@ -47,12 +47,14 @@
 	bottom: 0;
 	left: 0;
 	background: currentColor;
-	transition: width 0.3s ease-out;
+	opacity: 0;
+	transition: width 0.2s ease-out;
 }
 
 .activeLink:hover::after,
 .inactiveLink:hover::after {
 	width: 100%;
+	opacity: 100;
 }
 
 /* Mobile Hamburger Nav Styling */
