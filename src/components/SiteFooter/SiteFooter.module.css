@@ -1,9 +1,30 @@
 .wrapper {
-	padding: 1rem;
-	border: 1px solid lightgray;
+	padding: 1.5rem 1.25rem;
+	padding-top: 2rem;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	color: white;
-	background: #88ab8e;
+	justify-content: space-between;
+	color: var(--BodyDarker);
+}
+
+.legal {
+	display: flex;
+	justify-content: start;
+	gap: 1.25rem;
+}
+.legalItem {
+	text-decoration: none;
+	color: inherit;
+}
+.legalItem.full {
+	display: none;
+}
+
+@media only screen and (min-width: 600px) {
+	.legalItem.short {
+		display: none;
+	}
+	.legalItem.full {
+		display: inherit;
+	}
 }

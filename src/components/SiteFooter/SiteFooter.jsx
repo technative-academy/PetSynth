@@ -24,7 +24,7 @@ function SiteFooter() {
 					Cookies
 				</a>
 			</div>
-			<span className={styles.copyright}>&copy; 2024</span>
+			<span>&copy; 2024</span>
 		</footer>
 	);
 }
