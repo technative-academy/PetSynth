@@ -1,20 +1,20 @@
+/* 'MOBILE' VIEWPORTS < 768px */
+
 h1 {
 	font:
-		900,
-		40px/48px "Roboto",
+		900 40px/48px "Roboto",
 		"Arial",
 		sans-serif;
 	padding: 0 1rem;
 	margin: 0;
 	color: #fff;
 	background: transparent;
-	margin-top: -13rem;
+	margin-top: -15rem;
 }
 
 h2 {
 	font:
-		600,
-		32px/40px "Roboto",
+		600 32px/40px "Roboto",
 		"Arial",
 		sans-serif;
 	padding: 0 1rem;
@@ -24,8 +24,7 @@ h2 {
 
 h3 {
 	font:
-		600,
-		20px/28px "Roboto",
+		600 20px/28px "Roboto",
 		"Arial",
 		sans-serif;
 	padding: 1rem 1rem;
@@ -36,8 +35,7 @@ h3 {
 
 h4 {
 	font:
-		400,
-		20px/28px "Roboto",
+		400 20px/28px "Roboto",
 		"Arial",
 		sans-serif;
 	padding: 1rem;
@@ -46,9 +44,34 @@ h4 {
 
 p {
 	font:
-		400,
-		16px/24px "Roboto",
+		400 16px/24px "Roboto",
+		"Arial",
 		sans-serif;
+}
+
+.Ask {
+	margin: 1rem;
+	height: 3rem;
+	width: 11rem;
+	font-weight: bold;
+	font:
+		600 16px/32px "Roboto",
+		"Arial" sans-serif;
+	color: white;
+	background-color: #8900ff;
+	border-radius: 5px;
+}
+
+.Visit {
+	margin: 1rem;
+	height: 3rem;
+	width: 11rem;
+	font:
+		600 16px/32px "Roboto",
+		"Arial" sans-serif;
+	color: #8900ff;
+	background-color: #fff;
+	border-radius: 5px;
 }
 
 .wrapper {
@@ -99,6 +122,20 @@ p {
 .contentBoxTwo {
 	flex: 1;
 	padding: 0 1rem;
+}
+.contentBoxThree {
+	flex: 1;
+	padding: 0 1rem;
+	text-align: left;
+}
+.contentBoxFour {
+	flex: 1;
+	padding: 0 1rem;
+	text-align: left;
+}
+.contentBoxFive {
+	flex: 1;
+	padding: 0 1rem;
 	text-align: left;
 }
 
@@ -107,23 +144,110 @@ p {
 }
 
 .homeIll {
-	width: 60vw;
+	width: 50vw;
 	height: auto;
+	margin: 0 auto;
 }
+
+/* 'DESKTOP' VIEWPORTS > 768px */
 
 @media (min-width: 768px) {
 	.primaryContentContainer {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template: 1fr 1fr / 1fr 1fr;
 		border-radius: 1rem;
 		padding: 1rem;
 		width: 75vw;
 		max-width: 1000px;
 		box-shadow: 0px 0px 20px 0px rgba(27, 28, 34, 0.1);
-		margin-bottom: 100px;
+		margin-bottom: 12vh;
 		margin-top: -5rem;
 		z-index: 20;
 		background-color: white;
-		position: relative;
+	}
+	.contentBoxOne {
+		flex: 1;
+		padding: 0rem 1rem;
+		text-align: center;
+		max-width: 70vw;
+	}
+
+	.contentBoxTwo {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+	.contentBoxThree {
+		grid-area: 1/ 2 / 2 / 3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contentBoxFour {
+		grid-area: 2/ 1 / 3 / 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.contentBoxFive {
+		grid-area: 2/ 2 / 3 / 3;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.homeIll {
+		width: auto;
+		max-height: 30vh;
+		margin: 1rem auto;
+	}
+
+	h1 {
+		font:
+			900 56px/64px "Roboto",
+			"Arial",
+			sans-serif;
+		padding: 0 1rem;
+		margin: 0;
+		color: #fff;
+		background: transparent;
+		margin-top: -19rem;
+	}
+	h2 {
+		font:
+			600 32px/40px "Roboto",
+			"Arial",
+			sans-serif;
+		padding: 0 1rem;
+		margin: 0;
+		text-align: left;
+	}
+
+	h3 {
+		font:
+			400 24px/36px "Roboto",
+			"Arial",
+			sans-serif;
+		padding: 1rem 1rem;
+		margin: 0;
+		text-align: left;
+		color: #fff;
+	}
+
+	h4 {
+		font:
+			400 20px/28px "Roboto",
+			"Arial",
+			sans-serif;
+		padding: 1rem;
+		margin: 0;
+	}
+
+	p {
+		font:
+			400 16px/24px "Roboto",
+			"Arial",
+			sans-serif;
 	}
 }

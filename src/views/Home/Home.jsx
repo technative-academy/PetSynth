@@ -42,7 +42,7 @@ function Home() {
 						Post an open-ended question and see some suggestions
 						from our specially trained AI.
 					</h4>
-					<button>Ask the brains!</button>
+					<button className={styles.Ask}>Ask the brains!</button>
 				</div>
 
 				<div className={styles.contentBoxFive}>
@@ -50,7 +50,7 @@ function Home() {
 						Visit our shop and buy one of our AI generated pets so
 						that we can afford to keep going!
 					</h4>
-					<button>Visit our shop</button>
+					<button className={styles.Visit}>Visit our shop</button>
 				</div>
 			</div>
 		</div>
