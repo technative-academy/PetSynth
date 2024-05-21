@@ -1,3 +1,4 @@
+/* Mobile header styling -- CSS gradient animation */
 .wrapper {
 	padding: 2rem;
 	border: 1px solid lightgray;
@@ -5,5 +6,28 @@
 	align-items: center;
 	justify-content: center;
 	color: white;
-	background: #88ab8e;
+	height: 400px;
+	background: linear-gradient(to right, #8900ff, #f50179);
+	background-size: 150% 150%;
+	animation: subtleGradientAnimation 10s ease infinite;
+}
+
+@keyframes subtleGradientAnimation {
+	0% {
+		background-position: 50% 50%;
+	}
+	50% {
+		background-position: 51% 50%;
+	}
+	100% {
+		background-position: 50% 50%;
+	}
+}
+
+/* Desktop header styling */
+
+@media (min-width: 768px) {
+	.wrapper {
+		height: 440px;
+	}
 }
