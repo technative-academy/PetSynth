@@ -66,7 +66,7 @@
 /* Mobile Hamburger Nav Styling */
 
 /* Desktop styling */
-@media (min-width: 786px) {
+@media (min-width: 768px) {
 	.links {
 		display: flex;
 		flex-direction: row;
