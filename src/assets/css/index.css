@@ -41,7 +41,8 @@ html {
 }
 
 html,
-body {
+body,
+#root {
 	height: 100%;
 }
 
@@ -55,6 +56,4 @@ body {
 *::before,
 *::after {
 	box-sizing: inherit;
-	padding: inherit;
-	margin: inherit;
 }
