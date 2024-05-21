@@ -9,7 +9,7 @@
 	height: 420px;
 	background: linear-gradient(-45deg, #8900ff, #f50179, #8900ff, #f50179);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 22s ease infinite;
 }
 
 @keyframes gradient {
