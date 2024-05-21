@@ -12,7 +12,7 @@ function SiteFooter() {
 					href={TOS_URL}
 					className={`${styles.legalItem} ${styles.short}`}
 				>
-					T &amp; Cs
+					T&amp;Cs
 				</a>
 				<a
 					href={TOS_URL}
