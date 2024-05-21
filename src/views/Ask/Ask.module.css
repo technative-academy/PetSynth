@@ -1,6 +1,120 @@
+/* Mobile styling */
+
 .wrapper {
 	background: white;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+}
+
+/* Page hero container and content styling -- might move later */
+
+.herocontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+h1 {
+	margin-top: -25rem;
+	color: white;
+}
+
+.herotitle {
+	color: white;
+	font-size: 20px;
+}
+
+/* Ask page container styling */
+
+.askcontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
+	margin-top: -100px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	z-index: 20px;
+	background-color: white;
+	width: 100%;
+}
+
+.input {
+	margin: 10px;
+	width: 400px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #8900ff;
+	padding: 10px;
+}
+
+.title {
+	font-size: 25px;
+}
+
+.askbtn {
+	width: 400px;
+	padding: 10px;
+	background: #8900ff;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid #8900ff;
+}
+
+.askbtn:hover {
+	background: #6e00cc;
+	border: 2px solid #8900ff;
+}
+
+.characters {
+	text-align: left;
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* Desktop styling */
+@media (min-width: 768px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	.askcontainer {
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		padding: 20px;
+		width: 1000px;
+		box-shadow: 0px 0px 20px 0px rgba(27, 28, 34, 0.1);
+		margin-bottom: 100px;
+		margin-top: -50px;
+		z-index: 20px;
+		background-color: white;
+	}
+
+	.btncontainer {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 460px;
+	}
+
+	.input {
+		width: 800px;
+	}
+
+	.askbtn {
+		width: 180px;
+	}
+
+	.title {
+		font-size: 16px;
+		margin-right: 660px;
+	}
 }

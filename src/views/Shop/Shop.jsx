@@ -5,7 +5,15 @@ import styles from "./Shop.module.css";
 function Shop() {
 	return (
 		<div className={styles.wrapper}>
-			<p>Shop</p>
+			<div className={styles.productcontainer}>
+				<div className={styles.inputcontainer}>
+					<input
+						placeholder="Search products..."
+						className={styles.input}
+					></input>
+					<button className={styles.btn}>Search</button>
+				</div>
+			</div>
 		</div>
 	);
 }
