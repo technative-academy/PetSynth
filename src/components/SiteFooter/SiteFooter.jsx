@@ -24,7 +24,15 @@ function SiteFooter() {
 					Cookies
 				</a>
 			</div>
-			<span>&copy; 2024</span>
+			<span>
+				Licensed under{" "}
+				<a
+					href="https://github.com/technative-academy/PetSynth/blob/main/LICENSE"
+					target="_blank"
+				>
+					MIT
+				</a>
+			</span>
 		</footer>
 	);
 }
