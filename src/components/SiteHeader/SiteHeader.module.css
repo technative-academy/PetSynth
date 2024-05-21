@@ -6,21 +6,24 @@
 	align-items: center;
 	justify-content: center;
 	color: white;
-	height: 400px;
-	background: linear-gradient(to right, #8900ff, #f50179);
-	background-size: 150% 150%;
-	animation: subtleGradientAnimation 10s ease infinite;
+	height: 420px;
+	background: linear-gradient(-45deg, #8900ff, #f50179, #8900ff, #f50179);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
-@keyframes subtleGradientAnimation {
+@keyframes gradient {
 	0% {
-		background-position: 50% 50%;
+		background-position: 0% 50%;
 	}
-	50% {
-		background-position: 51% 50%;
+	35% {
+		background-position: 100% 50%;
+	}
+	65% {
+		background-position: 0% 50%;
 	}
 	100% {
-		background-position: 50% 50%;
+		background-position: 0% 50%;
 	}
 }
 
