@@ -1,9 +1,12 @@
 import React, { useMemo } from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 
+import { fetchResponses } from "../../store";
 import styles from "./Ask.module.css";
 
 const AskForm = () => {
+	const dispatch = useDispatch();
 	const [questionInput, setQuestionInput] = useState("");
 	const charRemaining = useMemo(() => {
 		return 160 - questionInput.length;
@@ -12,7 +15,7 @@ const AskForm = () => {
 	return (
 		<div className={styles.askcontainer}>
 			<p className={styles.title}>Ask your question</p>
-			<form>
+			<form onSubmit={handleSubmit}>
 				<input
 					role="searchbox"
 					placeholder="Type your question here..."
@@ -43,6 +46,11 @@ const AskForm = () => {
 
 	function handleChange(event) {
 		setQuestionInput((prev) => event.target.value);
+	}
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		dispatch(fetchResponses(questionInput));
 	}
 };
 
