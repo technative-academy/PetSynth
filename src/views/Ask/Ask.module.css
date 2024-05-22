@@ -9,6 +9,15 @@
 	align-items: center;
 }
 
+/* Conditional colour rendering for character countdown */
+.posNumber {
+	color: black;
+}
+
+.negNumber {
+	color: red;
+}
+
 /* Page hero container and content styling -- might move later */
 
 .herocontainer {
