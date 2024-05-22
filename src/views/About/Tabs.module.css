@@ -2,15 +2,22 @@
 }
 .tabButtonContainer {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+	--border: 1px solid var(--PrimaryLight);
+	--border-radius: 0.25rem;
+}
+.tabsSpacer {
+	flex: 1;
+	border-bottom: var(--border);
+}
+.tabGroup {
 }
 .tabButton {
 	all: unset;
 	cursor: pointer;
 
 	padding: 0.5rem 2rem;
-	--border: 1px solid var(--PrimaryLight);
-	border-radius: 0.25rem;
 	border-bottom: var(--border);
 
 	/* TODO: rework to use whatever global solution we come up with */
@@ -21,6 +28,8 @@
 	cursor: unset;
 	border: var(--border);
 	border-bottom: none;
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
 
 	color: var(--Black);
 }
