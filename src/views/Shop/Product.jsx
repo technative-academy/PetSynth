@@ -1,10 +1,10 @@
-import styles from "./FilterProps.module.css";
+import styles from "./Shop.module.css";
 
 // Individual Product (pet) Component:
-function Product({ id, title, description, stars, price }) {
+function Product({ image, title, description, stars, price }) {
 	return (
 		<div className={styles.productcontainer}>
-			<img src={""} className={styles.img} alt={title} />
+			<img src={image} className={styles.img} alt={title} width="300px" />
 			<p>{title}</p>
 			<p>{description}</p>
 			<p>{stars}</p>
