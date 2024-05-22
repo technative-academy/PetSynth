@@ -12,6 +12,7 @@ export const fetchResponses = createAsyncThunk(
 		const response = await fetch(apiURL);
 		const data = await response.json();
 		console.log(data);
+		return data.results;
 	},
 );
 

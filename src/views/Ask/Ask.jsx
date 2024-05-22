@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./Ask.module.css";
 import AskForm from "./AskForm";
+import AskResults from "./AskResults";
 
 function Ask() {
 	return (
@@ -16,6 +17,7 @@ function Ask() {
 			</div>
 			<AskForm />
 			{/* Div container and extra button needed here for Results content */}
+			<AskResults />
 		</div>
 	);
 }
