@@ -68,6 +68,11 @@
 	font-size: 25px;
 }
 
+.buttonContainer {
+	display: flex;
+	flex-direction: column;
+}
+
 .askbtn {
 	width: 400px;
 	padding: 10px;
@@ -111,10 +116,13 @@
 		background-color: white;
 	}
 
-	.btncontainer {
+	.buttonAndRemaining {
 		display: flex;
 		flex-direction: row-reverse;
 		gap: 460px;
+	}
+	.buttonContainer {
+		flex-direction: row-reverse;
 	}
 
 	.input {

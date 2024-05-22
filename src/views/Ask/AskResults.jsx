@@ -1,8 +1,6 @@
-import React, { useMemo } from "react";
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 
-import { fetchResponses } from "../../store";
 import styles from "./Ask.module.css";
 
 function ResultItem({ title, description }) {

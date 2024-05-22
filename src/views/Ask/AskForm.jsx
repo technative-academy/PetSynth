@@ -23,10 +23,19 @@ const AskForm = () => {
 					value={questionInput}
 					onChange={handleChange}
 				></input>
-				<div className={styles.btncontainer}>
-					<button type="submit" className={styles.askbtn}>
-						Ask PetSynth
-					</button>
+				<div className={styles.buttonAndRemaining}>
+					<div className={styles.buttonContainer}>
+						<button type="submit" className={styles.askbtn}>
+							Ask PetSynth
+						</button>
+						<button
+							type="button"
+							onClick={handleSuggestClick}
+							className={styles.askbtn}
+						>
+							Suggest a Question
+						</button>
+					</div>
 					<p className={styles.characters}>
 						<span
 							className={
@@ -52,6 +61,7 @@ const AskForm = () => {
 		event.preventDefault();
 		dispatch(fetchResponses(questionInput));
 	}
+	function handleSuggestClick(event) {}
 };
 
 export default AskForm;
