@@ -9,7 +9,7 @@ function Ask() {
 		<div className={styles.wrapper}>
 			{/* Hero container content needs to overlap header */}
 			<div className={styles.herocontainer}>
-				<h1>Ask PetSynth</h1>
+				<h1 className={styles.h1}>Ask PetSynth</h1>
 				<p className={styles.herotitle}>
 					Post an open-ended question here and see some suggestions
 					from our specially trained PetSynth AI...

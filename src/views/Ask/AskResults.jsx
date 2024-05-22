@@ -21,10 +21,14 @@ function AskResults() {
 	});
 	return (
 		<div>
-			<h3>Results</h3>
-			{/* {results.map((result) => (
-				<ResultItem {...result} />
-			))} */}
+			{results && (
+				<>
+					<h3 className={styles.resultsTitle}>Results</h3>
+					{results.map((result) => (
+						<ResultItem {...result} />
+					))}
+				</>
+			)}
 		</div>
 	);
 }
