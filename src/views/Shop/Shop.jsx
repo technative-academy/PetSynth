@@ -1,12 +1,14 @@
 import React from "react";
 
+import testData from "./testData.json";
+
+import Product from "./Product";
 import Search from "./Search";
 import styles from "./Shop.module.css";
 
 function Shop() {
 	return (
 		<div className={styles.wrapper}>
-			{/* Hero container content needs to overlap header */}
 			<div className={styles.herocontainer}>
 				<h1>Buy the Pets</h1>
 				<p className={styles.herotitle}>
@@ -16,6 +18,9 @@ function Shop() {
 			</div>
 			<div className={styles.searchcomponent}>
 				<Search />
+				{testData.products.map((product) => (
+					<Product {...product} />
+				))}
 			</div>
 		</div>
 	);

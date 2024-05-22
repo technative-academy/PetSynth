@@ -1,0 +1,52 @@
+{
+	"products": [
+		{
+			"id": "43a8330b-87c3-4896-99c8-bf75942998a4",
+			"title": "CyberHog",
+			"description": "A hedgehog with cybernetic enhancements and neon-glowing quills. Its body is a blend of organic and mechanical parts.",
+			"image": "https://project-2.technative.dev.f90.co.uk/media/images/products/hedgehog/hedgehog_9wjAaZ1.jpg",
+			"price": "10.00",
+			"stars": 5
+		},
+		{
+			"id": "91d545b3-967f-4b57-8fd9-bbbe30d9dd71",
+			"title": "Solarwhale",
+			"description": "A small whale that absorbs sunlight through its skin. Its smooth, reflective body glows with stored solar energy.",
+			"image": "https://project-2.technative.dev.f90.co.uk/media/images/products/hedgehog/hedgehog_9wjAaZ1.jpg",
+			"price": "12.00",
+			"stars": 3
+		},
+		{
+			"id": "92878fc0-109c-41ca-8768-91063a31b2b4",
+			"title": "Snakeling",
+			"description": "A snake with the legs of a spider. Its long, serpentine body is supported by multiple, spindly legs.",
+			"image": "https://project-2.technative.dev.f90.co.uk/media/images/products/hedgehog/hedgehog_9wjAaZ1.jpg",
+			"price": "10.00",
+			"stars": 3
+		},
+		{
+			"id": "c2449c1c-cc18-4e06-a58f-f96366e39f66",
+			"title": "Froggle",
+			"description": "A frog with the playful nature of a beagle. It has the body of a frog and the ears and tail of a beagle.",
+			"image": "https://project-2.technative.dev.f90.co.uk/media/images/products/hedgehog/hedgehog_9wjAaZ1.jpg",
+			"price": "12.00",
+			"stars": 2
+		},
+		{
+			"id": "92878fc0-109c-41ca-8768-91063a31b2b4",
+			"title": "Penguicorn",
+			"description": "A penguin with a unicorn horn. It has a sleek black and white body with a magical, spiraled horn.",
+			"image": "https://project-2.technative.dev.f90.co.uk/media/images/products/hedgehog/hedgehog_9wjAaZ1.jpg",
+			"price": "10.00",
+			"stars": 3
+		},
+		{
+			"id": "c2449c1c-cc18-4e06-a58f-f96366e39f66",
+			"title": "Octopug",
+			"description": "A pug with eight tentacle legs. It has a cute pug face and flexible, multifunctional tentacles.",
+			"image": "https://project-2.technative.dev.f90.co.uk/media/images/products/hedgehog/hedgehog_9wjAaZ1.jpg",
+			"price": "12.00",
+			"stars": 2
+		}
+	]
+}
