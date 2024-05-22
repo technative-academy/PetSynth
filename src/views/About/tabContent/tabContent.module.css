@@ -1,6 +1,10 @@
 .p {
 }
 
+.img {
+	width: 100%;
+	height: auto;
+}
 .twoColumns {
 	display: flex;
 	flex-direction: column;

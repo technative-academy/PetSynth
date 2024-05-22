@@ -3,7 +3,13 @@ import styles from "./tabContent.module.css";
 export default function AboutTeam() {
 	return (
 		<>
-			<p>TODO: image</p>
+			<img
+				className={styles.img}
+				src="/img/meetTheTeam.jpg"
+				alt="A group of people smiling at the camera with their eyes censored by long black rectangles"
+				width={3887}
+				height={2496}
+			></img>
 			<div className={styles.twoColumns}>
 				<div>
 					<p className={styles.p}>
