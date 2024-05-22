@@ -1,2 +1,13 @@
 .p {
 }
+
+.twoColumns {
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+	.twoColumns {
+		flex-direction: row;
+		gap: 2rem;
+	}
+}
