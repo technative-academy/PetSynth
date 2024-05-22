@@ -1,24 +1,30 @@
 /* Mobile header styling -- CSS gradient animation */
 .wrapper {
-	padding: 2rem;
+	padding: 1rem 2rem;
 	border: 1px solid lightgray;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: row;
+	gap: 2rem;
+	align-items: flex-start;
+	justify-content: space-between;
 	color: white;
-	height: 420px;
+	height: 40vh;
 	background: linear-gradient(-45deg, #8900ff, #f50179, #8900ff, #f50179);
 	background-size: 400% 400%;
 	animation: gradient 22s ease infinite;
 }
 
 .logo {
+	flex: 1;
 	font-family: "Orbitron", sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
-	margin-bottom: 320px;
-	margin-left: 200px;
 	font-size: 40px;
+}
+
+.siteNav {
+	flex: 1;
+	padding-right: 4vw;
 }
 
 @keyframes gradient {
@@ -36,16 +42,42 @@
 	}
 }
 
+/* Small Mobile Styling */
+
+@media (max-width: 530px) {
+	.wrapper {
+		height: 105vw;
+		padding: 1rem 1rem;
+		gap: 1rem;
+	}
+
+	.logo {
+		/* margin-right: 500px; */
+		margin: 0;
+		font-size: 24px;
+	}
+
+	.siteNav {
+		flex: 1;
+	}
+}
+
 /* Desktop header styling */
 
 @media (min-width: 768px) {
 	.wrapper {
-		height: 440px;
+		height: 50vh;
+		justify-content: space-evenly;
 	}
 
 	.logo {
-		margin-right: 500px;
-		margin-top: 20px;
-		font-size: 40px;
+		/* margin-right: 500px; */
+		font-size: 64px;
+		margin-top: 1rem;
+		flex: 2;
+	}
+
+	.siteNav {
+		flex: 1;
 	}
 }
