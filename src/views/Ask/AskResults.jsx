@@ -1,6 +1,7 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
+import { fetchResponses } from "../../store";
 import styles from "./Ask.module.css";
 
 function ResultItem({ title, description }) {
@@ -13,6 +14,8 @@ function ResultItem({ title, description }) {
 }
 
 function AskResults() {
+	const dispatch = useDispatch();
+
 	const results = useSelector((state) => {
 		return state.ask.responses;
 	});
@@ -21,13 +24,23 @@ function AskResults() {
 			{results && (
 				<>
 					<h3 className={styles.resultsTitle}>Results</h3>
-					{results.map((result) => (
-						<ResultItem key={result.title} {...result} />
+					{results.map((result, index) => (
+						<ResultItem
+							key={`${result.title}-${index}`}
+							{...result}
+						/>
 					))}
+					<button type="button" onClick={handleShowMore}>
+						Show more
+					</button>
 				</>
 			)}
 		</div>
 	);
+
+	function handleShowMore() {
+		dispatch(fetchResponses(null));
+	}
 }
 
 export default AskResults;
