@@ -16,7 +16,6 @@ function ResultItem({ title, description }) {
 
 function AskResults() {
 	const results = useSelector((state) => {
-		console.log(state);
 		return state.ask.responses;
 	});
 	return (
@@ -25,7 +24,7 @@ function AskResults() {
 				<>
 					<h3 className={styles.resultsTitle}>Results</h3>
 					{results.map((result) => (
-						<ResultItem {...result} />
+						<ResultItem key={result.title} {...result} />
 					))}
 				</>
 			)}

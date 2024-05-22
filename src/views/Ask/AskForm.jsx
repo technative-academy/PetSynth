@@ -45,7 +45,7 @@ const AskForm = () => {
 	);
 
 	function handleChange(event) {
-		setQuestionInput((prev) => event.target.value);
+		setQuestionInput(event.target.value);
 	}
 
 	function handleSubmit(event) {

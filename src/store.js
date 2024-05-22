@@ -4,14 +4,17 @@ import {
 	createSlice,
 } from "@reduxjs/toolkit";
 
+const API_URL = "";
 export const fetchResponses = createAsyncThunk(
 	"ask/fetchResponses",
-	async () => {
-		const apiURL =
-			"https://project-2.technative.dev.f90.co.uk/ai/hedgehog?query=what+are+the+best+dinosaurs";
-		const response = await fetch(apiURL);
+	async (question) => {
+		const urlObj = new URL(
+			"https://project-2.technative.dev.f90.co.uk/ai/hedgehog",
+		);
+		urlObj.searchParams.set("query", question);
+
+		const response = await fetch(urlObj);
 		const data = await response.json();
-		console.log(data);
 		return data.results;
 	},
 );
