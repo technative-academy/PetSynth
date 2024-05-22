@@ -7,7 +7,7 @@ function SiteHeader() {
 	return (
 		<header className={styles.wrapper}>
 			<h2 className={styles.logo}>Petsynth</h2>
-			<SiteNav />
+			<SiteNav className={styles.siteNav} />
 		</header>
 	);
 }
