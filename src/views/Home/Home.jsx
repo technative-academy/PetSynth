@@ -33,7 +33,7 @@ function Home() {
 				<div className={styles.contentBoxThree}>
 					<img
 						className={styles.homeIll}
-						src="public/img/home_ill.png"
+						src="/img/home_ill.png"
 						alt="Man with Computer"
 					/>
 				</div>
