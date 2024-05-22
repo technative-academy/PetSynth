@@ -43,6 +43,13 @@ A little communication took place in **Slack**, mostly as a place to share the o
 
 <details>
 <summary>Day 3 - Wednesday</summary>
+
+-   Merged in overnight updates to Home and About views
+-   Modified responsiveness to Header and Nav components
+-   Updated styles to Products page and also create product content
+-   Group video-chat Coding using **Google Meet** to work out the _ChatGPT_ API and _Redux_ integrations. Encountered some issues actually rather annoying just in the conditional rendering of the returned responses from the API.
+-   Continued the above coding after a break to introduce _Show More_ button functionality to the above.
+-   Finished the day with continued group video-chat-shared-code to start on the Products page functionality, at an initial stage of implementing rending some products from a local .json
 </details>
 
 <details>
