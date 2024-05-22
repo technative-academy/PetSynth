@@ -1,4 +1,26 @@
 .wrapper {
 }
-.tabButtons {
+.tabButtonContainer {
+	display: flex;
+	justify-content: center;
+}
+.tabButton {
+	all: unset;
+	cursor: pointer;
+
+	padding: 0.5rem 2rem;
+	--border: 1px solid var(--PrimaryLight);
+	border-radius: 0.25rem;
+	border-bottom: var(--border);
+
+	/* TODO: rework to use whatever global solution we come up with */
+	font-size: 14px;
+	color: var(--BodyDarker);
+}
+.tabButton:disabled {
+	cursor: unset;
+	border: var(--border);
+	border-bottom: none;
+
+	color: var(--Black);
 }

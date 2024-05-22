@@ -7,17 +7,20 @@ export default function Tabs({ tabs }) {
 
 	return (
 		<section className={styles.wrapper}>
-			<div className={styles.tabButtons}>
-				{tabs.map(({ displayName }, index) => (
-					<button
-						key={index}
-						type="button"
-						disabled={index === selectedTabIndex}
-						onClick={() => handleTabButtonClick(index)}
-					>
-						{displayName}
-					</button>
-				))}
+			<div className={styles.tabButtonContainer}>
+				<div>
+					{tabs.map(({ displayName }, index) => (
+						<button
+							key={index}
+							type="button"
+							className={styles.tabButton}
+							disabled={index === selectedTabIndex}
+							onClick={() => handleTabButtonClick(index)}
+						>
+							{displayName}
+						</button>
+					))}
+				</div>
 			</div>
 			{tabs[selectedTabIndex].content}
 		</section>
