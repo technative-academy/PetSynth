@@ -9,6 +9,15 @@
 	align-items: center;
 }
 
+/* Conditional colour rendering for character countdown */
+.posNumber {
+	color: black;
+}
+
+.negNumber {
+	color: red;
+}
+
 /* Page hero container and content styling -- might move later */
 
 .herocontainer {
@@ -20,7 +29,7 @@
 	padding-right: 20px;
 }
 
-h1 {
+.h1 {
 	margin-top: -25rem;
 	color: white;
 }
@@ -59,6 +68,11 @@ h1 {
 	font-size: 25px;
 }
 
+.buttonContainer {
+	display: flex;
+	flex-direction: column;
+}
+
 .askbtn {
 	width: 400px;
 	padding: 10px;
@@ -82,8 +96,11 @@ h1 {
 
 /* Desktop styling */
 @media (min-width: 768px) {
-	h1 {
+	.h1 {
 		font-size: 40px;
+	}
+	.resultsTitle {
+		color: black;
 	}
 
 	.askcontainer {
@@ -99,10 +116,13 @@ h1 {
 		background-color: white;
 	}
 
-	.btncontainer {
+	.buttonAndRemaining {
 		display: flex;
 		flex-direction: row-reverse;
 		gap: 460px;
+	}
+	.buttonContainer {
+		flex-direction: row-reverse;
 	}
 
 	.input {
