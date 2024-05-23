@@ -1,8 +1,7 @@
 /* Mobile Styling */
 .wrapper {
-	padding: 0.5rem;
-	/* border: 1px solid lightgray; */
 	display: flex;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
 	background: transparent;
@@ -10,11 +9,15 @@
 
 .links {
 	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
+	align-self: center;
+
 	font:
-		14px/20px "Roboto",
+		400 16px/24px "Roboto",
 		sans-serif;
+	margin-top: 2vw;
+	margin-left: -100%;
+	width: 100%;
+	z-index: 10;
 }
 
 .activeLink,
@@ -22,6 +25,7 @@
 	padding: 2px;
 	list-style: none;
 	text-decoration: none;
+	margin: 0 0 0 1.5rem;
 }
 
 .activeLink {
@@ -65,8 +69,22 @@
 
 /* Mobile Hamburger Nav Styling */
 
+.navBurgerMenu {
+	display: fixed;
+	padding-top: 1rem;
+	margin-left: 1rem;
+	z-index: 10;
+}
+
 /* Desktop styling */
 @media (min-width: 768px) {
+	.wrapper {
+		padding: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: transparent;
+	}
 	.links {
 		display: flex;
 		flex-direction: row;
@@ -74,5 +92,20 @@
 		font:
 			16px/24px "Roboto",
 			sans-serif;
+		margin: 0;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.activeLink,
+	.inactiveLink {
+		padding: 2px;
+		list-style: none;
+		text-decoration: none;
+		margin: 0;
+	}
+
+	.navBurgerMenu {
+		display: none;
 	}
 }
