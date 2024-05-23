@@ -9,7 +9,7 @@
 	justify-content: space-between;
 	color: white;
 	height: 40vh;
-	background: linear-gradient(-45deg, #8900ff, #f50179, #8900ff, #f50179);
+	background: linear-gradient(-45deg, #8900ff, #ffd700, #2e8b57, #8900ff);
 	background-size: 400% 400%;
 	animation: gradient 22s ease infinite;
 }
