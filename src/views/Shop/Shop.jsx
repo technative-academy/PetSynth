@@ -1,22 +1,10 @@
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
 
-import testData from "./testData.json";
-
-import { fetchProducts } from "../../store";
-import Product from "./Product";
+import ProductResults from "./ProductResults";
 import Search from "./Search";
 import styles from "./Shop.module.css";
 
 function Shop() {
-	const dispatch = useDispatch();
-	useEffect(() => {
-		dispatch(fetchProducts({ query: "", "page-size": 1 }));
-		setTimeout(() => {
-			dispatch(fetchProducts(null));
-		}, 2000);
-	}, [dispatch]);
-
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.herocontainer}>
@@ -28,9 +16,7 @@ function Shop() {
 			</div>
 			<div className={styles.searchcomponent}>
 				<Search />
-				{testData.products.map((product) => (
-					<Product {...product} />
-				))}
+				<ProductResults query="" />
 			</div>
 		</div>
 	);
