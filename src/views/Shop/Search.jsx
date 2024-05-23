@@ -25,7 +25,7 @@ function SearchInput({ onSubmit }) {
 				onChange={(e) => setQueryInput(e.target.value)}
 			></input>
 			<label>
-				Sort by:
+				Sort by
 				<select
 					value={sortModeInput}
 					onChange={(e) => setSortModeInput(e.target.value)}
