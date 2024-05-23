@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { fetchProducts } from "../../store";
@@ -6,20 +6,27 @@ import Product from "./Product";
 import styles from "./ProductResults.module.css";
 
 const PRODUCTS_PER_PAGE = 6;
-export default function Products({ query }) {
+export default function Products({ query, sortMode }) {
 	const dispatch = useDispatch();
 
 	const products = useSelector((state) => state.products.results);
+	const resultsUUID = useMemo(() => crypto.randomUUID(), [products]);
 	useEffect(() => {
-		dispatch(fetchProducts({ query, "page-size": PRODUCTS_PER_PAGE }));
-	}, [query]);
+		dispatch(
+			fetchProducts({
+				query,
+				"page-size": PRODUCTS_PER_PAGE,
+				sort: sortMode,
+			}),
+		);
+	}, [query, sortMode]);
 
 	const isLoading = useSelector((state) => state.products.pending);
 	const gotAllResults = useSelector((state) => state.products.gotAllResults);
 
 	return (
 		<>
-			<ul className={styles.productList}>
+			<ul key={resultsUUID} className={styles.productList}>
 				{products &&
 					products.map((product) => (
 						<Product key={product.id} {...product} />

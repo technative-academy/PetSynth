@@ -6,6 +6,7 @@ import styles from "./Shop.module.css";
 
 function Shop() {
 	const [activeQuery, setActiveQuery] = useState("");
+	const [activeSortMode, setActiveSortMode] = useState(null);
 
 	return (
 		<div className={styles.wrapper}>
@@ -17,11 +18,16 @@ function Shop() {
 				</p>
 			</div>
 			<div className={styles.searchcomponent}>
-				<Search onSubmit={(newQuery) => setActiveQuery(newQuery)} />
-				<ProductResults query={activeQuery} />
+				<Search onSubmit={handleSearchSubmit} />
+				<ProductResults query={activeQuery} sortMode={activeSortMode} />
 			</div>
 		</div>
 	);
+
+	function handleSearchSubmit({ query, sortMode }) {
+		setActiveQuery(query);
+		setActiveSortMode(sortMode);
+	}
 }
 
 export default Shop;
