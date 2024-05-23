@@ -10,8 +10,19 @@ export default function Products({ query, sortMode }) {
 	const dispatch = useDispatch();
 
 	const products = useSelector((state) => state.products.results);
-	const resultsUUID = useMemo(() => crypto.randomUUID(), [products]);
+	const resultsUUID = useMemo(() => crypto.randomUUID(), [query, sortMode]);
 	useEffect(() => {
+		console.log("Change UUID", resultsUUID);
+	}, [resultsUUID]);
+	useEffect(() => {
+		console.log(
+			"Change query",
+			JSON.stringify({
+				query,
+				"page-size": PRODUCTS_PER_PAGE,
+				sort: sortMode,
+			}),
+		);
 		dispatch(
 			fetchProducts({
 				query,
@@ -45,6 +56,7 @@ export default function Products({ query, sortMode }) {
 	);
 
 	function handleShowMoreClick() {
+		console.log("Fetched more");
 		dispatch(fetchProducts(null));
 	}
 }
