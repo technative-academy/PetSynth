@@ -10,13 +10,12 @@ function Ask() {
 			{/* Hero container content needs to overlap header */}
 			<div className={styles.herocontainer}>
 				<h1 className={styles.h1}>Ask PetSynth</h1>
-				<p className={styles.herotitle}>
+				<p className={styles.herodesc}>
 					Post an open-ended question here and see some suggestions
 					from our specially trained PetSynth AI...
 				</p>
 			</div>
 			<AskForm />
-			{/* Div container and extra button needed here for Results content */}
 			<AskResults />
 		</div>
 	);
