@@ -49,6 +49,10 @@ p {
 		sans-serif;
 }
 
+.buttonBold {
+	font-weight: bolder;
+}
+
 .Ask {
 	margin: 1rem;
 	height: 3rem;
@@ -143,10 +147,15 @@ p {
 	color: #8900ff;
 }
 
+.purpleP {
+	color: #8900ff;
+	font-weight: bolder;
+}
+
 .homeIll {
 	width: 50vw;
 	height: auto;
-	margin: 0 auto;
+	margin: 1rem auto;
 }
 
 /* 'DESKTOP' VIEWPORTS > 768px */
@@ -175,6 +184,10 @@ p {
 	.contentBoxTwo {
 		grid-area: 1 / 1 / 2 / 2;
 	}
+
+	.contentBoxTwo p {
+		padding-left: 1rem;
+	}
 	.contentBoxThree {
 		grid-area: 1/ 2 / 2 / 3;
 		display: flex;
@@ -200,6 +213,7 @@ p {
 	.homeIll {
 		width: auto;
 		max-height: 30vh;
+		padding-top: 1rem;
 		margin: 1rem auto;
 	}
 
