@@ -54,6 +54,10 @@ A little communication took place in **Slack**, mostly as a place to share the o
 
 <details>
 <summary>Day 4 - Thursday</summary>
+-   Standup meeting to discuss primary outstanding priorities, each creating their own list and discovering overlap - using Pete as a mediator!
+-   Customised appearance and content to _Header_, _Home_, _About_
+-   Improved style, functionality and behaviour of _Ask_
+-   Improved style, functionality and behaviour of _Shop_
 </details>
 
 <details>
