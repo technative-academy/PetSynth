@@ -48,6 +48,9 @@
 
 .aboutH3 {
 	max-width: 25ch;
+	margin-left: 1rem;
+	margin: 0 auto;
+	text-align: center;
 }
 /*  Potentially release if we get round to improving specificity of Home view selectors - class versus element
 .aboutp {
@@ -65,7 +68,7 @@
 		/* display: grid;
 		grid-template: 1fr 1fr / 1fr 1fr; */
 		border-radius: 1rem;
-		padding: 1rem;
+		padding: 2rem;
 		width: 75vw;
 		max-width: 1000px;
 		box-shadow: 0px 0px 20px 0px rgba(27, 28, 34, 0.1);
