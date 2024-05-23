@@ -7,11 +7,19 @@
 	--border: 1px solid var(--PrimaryLight);
 	--border-radius: 0.25rem;
 }
-.tabsSpacer {
+.tabsSpacer1 {
 	flex: 1;
 	border-bottom: var(--border);
 }
+
+.tabsSpacer2 {
+	flex: 1;
+	border-bottom: var(--border);
+}
+
 .tabGroup {
+	display: flex;
+	justify-content: center;
 }
 .tabButton {
 	all: unset;
@@ -21,7 +29,10 @@
 	border-bottom: var(--border);
 
 	/* TODO: rework to use whatever global solution we come up with */
-	font-size: 14px;
+	font:
+		400 20px/28px "Roboto",
+		"Arial",
+		sans-serif;
 	color: var(--BodyDarker);
 }
 .tabButton:disabled {
@@ -32,4 +43,22 @@
 	border-top-right-radius: var(--border-radius);
 
 	color: var(--Black);
+}
+
+@media (min-width: 768px) {
+	.tabButtonContainer {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 1.5rem;
+		--border: 1px solid var(--PrimaryLight);
+		--border-radius: 0.25rem;
+	}
+	.tabsSpacer1 {
+		display: hidden;
+	}
+
+	.tabGroup {
+		display: flex;
+		justify-content: flex-start;
+	}
 }

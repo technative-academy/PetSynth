@@ -8,7 +8,7 @@ export default function Tabs({ tabs }) {
 	return (
 		<section className={styles.wrapper}>
 			<div className={styles.tabButtonContainer}>
-				<div className={styles.tabsSpacer} />
+				<div className={styles.tabsSpace1} />
 				<div className={styles.tabGroup}>
 					{tabs.map(({ displayName }, index) => (
 						<button
@@ -22,7 +22,7 @@ export default function Tabs({ tabs }) {
 						</button>
 					))}
 				</div>
-				<div className={styles.tabsSpacer} />
+				<div className={styles.tabsSpacer2} />
 			</div>
 			{tabs[selectedTabIndex].content}
 		</section>
