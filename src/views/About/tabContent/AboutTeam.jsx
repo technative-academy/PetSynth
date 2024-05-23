@@ -49,34 +49,37 @@ export default function AboutTeam() {
 						And finally, there's{" "}
 						<span className={styles.purplePSpan}>C Grizzle</span>,
 						the entrepreneurial powerhouse with a heart of greige
-						and a mind for business blunter than a rolling pin. old
+						and a mind for business blunter than a rolling pin. Old
 						Grizzle's the glue that holds our ragtag team together,
 						navigating the murky waters of commerce with a grimace
 						but a steadfast resolve. Their vision extends beyond
-						profit margins; they see PetSynth as a catalyst for
-						positive change in a world hungry for connection and
-						compassion.
+						profit margins; they see
+						<span className={styles.purplePSpan}> PetSynth</span> as
+						a catalyst for positive change in a world hungry for
+						connection and compassion.
 					</p>
 					<p className={styles.p}>
 						Together, we're more than just a business; we're a
 						movement. We believe in the transformative power of
 						technology to bridge divides, foster empathy, and spread
 						joy to every corner of the globe. With every
-						custom-crafted PetSynth creation, we're not just selling
-						a product; we're sowing the seeds of understanding and
-						empathy that will one day blossom into a world where
-						peace reigns supreme.
+						custom-crafted{" "}
+						<span className={styles.purplePSpan}> PetSynth </span>
+						creation, we're not just selling a product; we're sowing
+						the seeds of understanding and empathy that will one day
+						blossom into a world where peace reigns supreme.
 					</p>
 					<p className={styles.p}>
 						So whether you're seeking a faithful feline friend to
 						frolic in your digital garden or a loyal canine
 						companion to keep you company on your virtual
-						adventures, PetSynth is here to make your wildest dreams
-						come true. Join us on this magical journey as we
-						redefine what it means to connect, one pixelated paw at
-						a time. After all, in a world where anything is
-						possible, why settle for ordinary when you can have
-						extraordinary?
+						adventures,{" "}
+						<span className={styles.purplePSpan}> PetSynth </span>is
+						here to make your wildest dreams come true. Join us on
+						this magical journey as we redefine what it means to
+						connect, one pixelated paw at a time. After all, in a
+						world where anything is possible, why settle for
+						ordinary when you can have extraordinary?
 					</p>
 				</div>
 			</div>

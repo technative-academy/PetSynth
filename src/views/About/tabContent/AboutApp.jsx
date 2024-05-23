@@ -35,7 +35,7 @@ export default function AboutApp() {
 				something entirely extraterrestrial?
 			</p>
 			<p className={styles.p}>
-				But wait, there’s more! Our app doesn’t just stop at creation;
+				But wait, there’s more! Our app* doesn’t just stop at creation;
 				it ensures your pet is as interactive as it is unique. With
 				advanced behavioral algorithms, your pet will adapt to your
 				lifestyle and preferences. Teach your cybernetic cat to play
@@ -45,7 +45,7 @@ export default function AboutApp() {
 				hilariously unpredictable antics.
 			</p>
 			<p className={styles.p}>
-				In short, the{" "}
+				In short, the
 				<span className={styles.purplePSpan}>PetSynth</span> App* is
 				your ticket to a world where the mundane is banished, and the
 				extraordinary reigns supreme. So go ahead, embrace the absurdity
