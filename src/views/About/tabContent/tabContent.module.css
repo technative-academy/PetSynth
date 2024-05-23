@@ -11,11 +11,19 @@
 .img {
 	width: 100%;
 	height: auto;
-	padding: 0.75rem 0;
+	padding: 1rem;
 }
 .twoColumns {
 	display: flex;
 	flex-direction: column;
+}
+
+.purplePSpan {
+	color: #8900ff;
+	font-weight: bolder;
+}
+
+.aboutAside {
 }
 
 /* Desktop */

@@ -4,9 +4,10 @@ import styles from "./About.module.css";
 export default function AboutHero() {
 	return (
 		<div className={styles.aboutHero}>
-			<h1 className={styles.aboutH1}>About the brains</h1>
+			<h1 className={styles.aboutH1}>About PetSynth AI</h1>
 			<h3 className={styles.aboutH3}>
-				Who we are, what we do, why we are, where we do
+				We make companions, and money, using your info, you paid to give
+				us!
 			</h3>
 		</div>
 	);
