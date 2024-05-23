@@ -51,10 +51,7 @@ function Home() {
 						suggestions from our specially trained
 						<span className={styles.purpleP}> PetSynth </span>.
 					</h4>
-					<button className={styles.Ask}>
-						Ask
-						<span className={styles.buttonBold}> PetSynth </span>
-					</button>
+					<button className={styles.Ask}>Ask PetSynth</button>
 				</div>
 
 				<div className={styles.contentBoxFive}>
