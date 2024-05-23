@@ -66,7 +66,9 @@ export const fetchProducts = createAsyncThunk(
 		}
 
 		for (const [name, value] of Object.entries(query)) {
-			urlObj.searchParams.set(name, value);
+			if (value != null) {
+				urlObj.searchParams.set(name, value);
+			}
 		}
 
 		const response = await fetch(urlObj);
@@ -84,6 +86,7 @@ const productsSlice = createSlice({
 	initialState: {
 		query: null,
 		results: null,
+		gotAllResults: false,
 		pending: false,
 		error: false,
 	},
@@ -95,8 +98,17 @@ const productsSlice = createSlice({
 		builder.addCase(fetchProducts.fulfilled, (state, action) => {
 			if (action.payload.isQuerySpecified) {
 				state.results = action.payload.results;
+				state.gotAllResults = action.payload.query["page-size"] == null; // If unspecified, all results will be returned by the API
 			} else {
 				state.results.push(...action.payload.results);
+				if (action.payload.query["page-size"] != null) {
+					if (
+						action.payload.results.length <
+						action.payload.query["page-size"]
+					) {
+						state.gotAllResults = true;
+					}
+				}
 			}
 			state.query = action.payload.query;
 

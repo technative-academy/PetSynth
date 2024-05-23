@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 
 import ProductResults from "./ProductResults";
 import Search from "./Search";
 import styles from "./Shop.module.css";
 
 function Shop() {
+	const [activeQuery, setActiveQuery] = useState("");
+
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.herocontainer}>
@@ -15,8 +17,8 @@ function Shop() {
 				</p>
 			</div>
 			<div className={styles.searchcomponent}>
-				<Search />
-				<ProductResults query="" />
+				<Search onSubmit={(newQuery) => setActiveQuery(newQuery)} />
+				<ProductResults query={activeQuery} />
 			</div>
 		</div>
 	);
