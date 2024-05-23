@@ -31,7 +31,7 @@ const AskForm = () => {
 						<button
 							type="button"
 							onClick={handleSuggestClick}
-							className={styles.askbtn}
+							className={styles.suggestbtn}
 						>
 							Suggest a Question
 						</button>

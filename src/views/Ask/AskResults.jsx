@@ -20,22 +20,27 @@ function AskResults() {
 		return state.ask.responses;
 	});
 	return (
-		<div>
+		<>
 			{results && (
-				<>
-					<h3 className={styles.resultsTitle}>Results</h3>
+				<div className={styles.resultslist}>
+					<h3 className={styles.resultsheading}>Results</h3>
 					{results.map((result, index) => (
 						<ResultItem
 							key={`${result.title}-${index}`}
 							{...result}
 						/>
 					))}
-					<button type="button" onClick={handleShowMore}>
+
+					<button
+						type="button"
+						onClick={handleShowMore}
+						className={styles.showmorebtn}
+					>
 						Show more
 					</button>
-				</>
+				</div>
 			)}
-		</div>
+		</>
 	);
 
 	function handleShowMore() {
