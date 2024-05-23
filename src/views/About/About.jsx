@@ -9,17 +9,22 @@ import AboutTeam from "./tabContent/AboutTeam";
 function About() {
 	return (
 		<div className={styles.wrapper}>
-			<div>
+			<div className={styles.aboutWrapper}>
 				<AboutHero />
-				<Tabs
-					tabs={[
-						{ displayName: "About the app", content: <AboutApp /> },
-						{
-							displayName: "About the team",
-							content: <AboutTeam />,
-						},
-					]}
-				/>
+				<div className={styles.aboutContentBox}>
+					<Tabs
+						tabs={[
+							{
+								displayName: "About the app",
+								content: <AboutApp />,
+							},
+							{
+								displayName: "About the team",
+								content: <AboutTeam />,
+							},
+						]}
+					/>
+				</div>
 			</div>
 		</div>
 	);
