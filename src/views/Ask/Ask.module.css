@@ -105,6 +105,10 @@
 	border: 2px solid #8900ff;
 }
 
+.askbtn:disabled {
+	opacity: 0.3;
+}
+
 .characters {
 	text-align: left;
 	font-size: 14px;

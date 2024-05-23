@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { fetchResponses } from "../../store";
 import styles from "./Ask.module.css";
@@ -11,6 +11,13 @@ const AskForm = () => {
 	const charRemaining = useMemo(() => {
 		return 160 - questionInput.length;
 	}, [questionInput]);
+
+	const isLoading = useSelector((state) => {
+		return state.ask.pending;
+	});
+
+	const submitIsDisabled =
+		questionInput.length === 0 || questionInput.length > 160 || isLoading;
 
 	return (
 		<div className={styles.askcontainer}>
@@ -25,8 +32,12 @@ const AskForm = () => {
 				></input>
 				<div className={styles.buttonAndRemaining}>
 					<div className={styles.buttonContainer}>
-						<button type="submit" className={styles.askbtn}>
-							Ask PetSynth
+						<button
+							type="submit"
+							className={styles.askbtn}
+							disabled={submitIsDisabled}
+						>
+							{isLoading ? "Loading" : "Ask PetSynth"}
 						</button>
 						<button
 							type="button"
