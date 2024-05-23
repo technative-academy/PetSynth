@@ -103,16 +103,10 @@ const productsSlice = createSlice({
 				state.results.push(
 					...action.payload.results.filter(
 						(newResult) =>
-							!state.results.find((existingResult) => {
-								if (existingResult.id === newResult.id) {
-									console.log(
-										"Duplicate",
-										newResult,
-										JSON.parse(JSON.stringify(state)),
-									);
-								}
-								return existingResult.id === newResult.id;
-							}),
+							!state.results.find(
+								(existingResult) =>
+									existingResult.id === newResult.id,
+							),
 					),
 				);
 				if (action.payload.query["page-size"] != null) {
