@@ -33,7 +33,7 @@ function Home() {
 						Our <span className={styles.purpleP}>PetSynth </span>can
 						find your pawfectly personalized, programmed, partner.
 						Then you can download and have your own friend to play
-						and interact with at any time, and anywhere, with our
+						and interact with at any time, anywhere, with our
 						dedicated mobile app (app due Footembar 2099).
 					</p>
 				</div>
@@ -46,8 +46,8 @@ function Home() {
 				</div>
 				<div className={styles.contentBoxFour}>
 					<h4>
-						Provide an short, but detailed question or description
-						of your personality and pet requirements to see some
+						Provide a short, but detailed question or description of
+						your personality and pet requirements to see some
 						suggestions from our specially trained
 						<span className={styles.purpleP}> PetSynth </span>.
 					</h4>
