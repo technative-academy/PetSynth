@@ -4,7 +4,7 @@
 	align-items: center;
 	justify-content: space-between;
 	color: var(--BodyDarker);
-	width: 70%;
+	width: 90%;
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -51,5 +51,16 @@ span a:hover {
 	}
 	.legalItem.full {
 		display: inherit;
+	}
+
+	wrapper {
+		padding: 1vw 1vw 4rem 1vw;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: var(--BodyDarker);
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
 	}
 }
