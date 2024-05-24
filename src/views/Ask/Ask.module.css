@@ -66,7 +66,7 @@
 
 .input {
 	margin: 10px;
-	width: 400px;
+	width: 325px;
 	height: 50px;
 	border-radius: 5px;
 	border: 1px solid #8900ff;
@@ -90,7 +90,7 @@
 
 .askbtn,
 .suggestbtn {
-	width: 400px;
+	width: 325px;
 	padding: 10px;
 	background: #8900ff;
 	border: none;
