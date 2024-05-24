@@ -42,7 +42,7 @@ function Home() {
 					<img
 						className={styles.homeIll}
 						src="/img/cyberOctoHog.jpeg"
-						alt="Man with Computer"
+						alt="Cyber Octopus Hog Hybrid Creature"
 					/>
 				</div>
 				<div className={styles.contentBoxFour}>
