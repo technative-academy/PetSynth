@@ -42,6 +42,11 @@
 	width: 500px;
 	padding-top: 50px;
 }
+.productImg {
+	display: block;
+	width: 25%;
+	height: auto;
+}
 
 .btncontainer {
 	display: flex;

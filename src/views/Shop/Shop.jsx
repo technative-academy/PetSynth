@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
-import testData from "./testData.json";
-
-import Product from "./Product";
+import ProductResults from "./ProductResults";
 import Search from "./Search";
 import styles from "./Shop.module.css";
 
 function Shop() {
+	const [activeQuery, setActiveQuery] = useState("");
+	const [activeSortMode, setActiveSortMode] = useState(null);
+
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.herocontainer}>
@@ -17,13 +18,16 @@ function Shop() {
 				</p>
 			</div>
 			<div className={styles.searchcomponent}>
-				<Search />
-				{testData.products.map((product) => (
-					<Product {...product} />
-				))}
+				<Search onSubmit={handleSearchSubmit} />
+				<ProductResults query={activeQuery} sortMode={activeSortMode} />
 			</div>
 		</div>
 	);
+
+	function handleSearchSubmit({ query, sortMode }) {
+		setActiveQuery(query);
+		setActiveSortMode(sortMode);
+	}
 }
 
 export default Shop;
