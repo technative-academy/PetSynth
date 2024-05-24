@@ -1,14 +1,13 @@
 /* Mobile header styling -- CSS gradient animation */
 .wrapper {
 	padding: 1rem 2rem;
-	border: 1px solid lightgray;
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
 	align-items: flex-start;
 	justify-content: space-between;
 	color: white;
-	height: 40vh;
+	height: 75vw;
 	background: linear-gradient(-45deg, #8900ff, #ffd700, #2e8b57, #8900ff);
 	background-size: 400% 400%;
 	animation: gradient 22s ease infinite;
@@ -46,7 +45,7 @@
 
 @media (max-width: 530px) {
 	.wrapper {
-		height: 105vw;
+		height: 57vh;
 		padding: 1rem 1rem;
 		gap: 1rem;
 	}
@@ -66,7 +65,7 @@
 
 @media (min-width: 768px) {
 	.wrapper {
-		height: 50vh;
+		height: 55vh;
 		justify-content: space-evenly;
 	}
 
