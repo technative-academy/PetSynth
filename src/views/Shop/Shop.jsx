@@ -11,8 +11,8 @@ function Shop() {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.herocontainer}>
-				<h1>Buy the Pets</h1>
-				<p className={styles.herotitle}>
+				<h1 className={styles.herotitle}>Buy the Pets</h1>
+				<p className={styles.herodesc}>
 					We need to sell as many pets as possible to keep PetSynth
 					operating. Take your pick below!
 				</p>

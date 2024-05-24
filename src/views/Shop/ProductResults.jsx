@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { fetchProducts } from "../../store";
 import Product from "./Product";
-import styles from "./ProductResults.module.css";
+import styles from "./Shop.module.css";
 
 const PRODUCTS_PER_PAGE = 6;
 export default function Products({ query, sortMode }) {
@@ -37,6 +37,7 @@ export default function Products({ query, sortMode }) {
 					type="button"
 					onClick={handleShowMoreClick}
 					disabled={isLoading}
+					className={styles.showmorebtn}
 				>
 					Show more
 				</button>

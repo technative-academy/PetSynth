@@ -24,11 +24,17 @@ function SearchInput({ onSubmit }) {
 				value={queryInput}
 				onChange={(e) => setQueryInput(e.target.value)}
 			></input>
-			<label>
+			<div className={styles.btncontainer}>
+				<button type="submit" className={styles.searchbtn}>
+					Search
+				</button>
+			</div>
+			<label className={styles.sortby}>
 				Sort by
 				<select
 					value={sortModeInput}
 					onChange={(e) => setSortModeInput(e.target.value)}
+					className={styles.select}
 				>
 					{SORT_MODES.map(([id, displayName]) => (
 						<option key={id} value={id}>
@@ -37,11 +43,6 @@ function SearchInput({ onSubmit }) {
 					))}
 				</select>
 			</label>
-			<div className={styles.btncontainer}>
-				<button type="submit" className={styles.searchbtn}>
-					Search
-				</button>
-			</div>
 		</form>
 	);
 
