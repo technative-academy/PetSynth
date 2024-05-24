@@ -98,7 +98,10 @@ const productsSlice = createSlice({
 		builder.addCase(fetchProducts.fulfilled, (state, action) => {
 			if (action.payload.isQuerySpecified) {
 				state.results = action.payload.results;
-				state.gotAllResults = action.payload.query["page-size"] == null; // If unspecified, all results will be returned by the API
+				state.gotAllResults =
+					action.payload.query["page-size"] == null ||
+					action.payload.results.length <
+						action.payload.query["page-size"]; // If unspecified, all results will be returned by the API
 			} else {
 				state.results.push(
 					...action.payload.results.filter(
