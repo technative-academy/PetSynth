@@ -44,7 +44,7 @@ function SiteNav() {
 	//logic to display different format nav menu for mobile, to desktop, but also auto revert menu display style upon resize to larger
 	const getNavDisplay = () => {
 		if (isMobile) {
-			return burgerOpen ? "inline" : "none";
+			return burgerOpen ? "inline-flex" : "none";
 		} else {
 			return "flex";
 		}
