@@ -80,3 +80,9 @@
 		flex: 1;
 	}
 }
+
+@media (prefers-reduced-motion) {
+	.wrapper {
+		animation: none;
+	}
+}
