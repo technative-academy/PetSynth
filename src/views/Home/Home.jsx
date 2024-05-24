@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { fetchResponses } from "../../store";
 import styles from "./Home.module.css";
@@ -51,7 +52,9 @@ function Home() {
 						suggestions from our specially trained
 						<span className={styles.purpleP}> PetSynth </span>.
 					</h4>
-					<button className={styles.Ask}>Ask PetSynth</button>
+					<Link to="/ask">
+						<button className={styles.Ask}>Ask PetSynth</button>
+					</Link>
 				</div>
 
 				<div className={styles.contentBoxFive}>
@@ -60,7 +63,9 @@ function Home() {
 						browse a range of pre-generated companions we've come up
 						with by extracting popular characteristics.
 					</h4>
-					<button className={styles.Visit}>Visit our shop</button>
+					<Link to="/shop">
+						<button className={styles.Visit}>Visit our shop</button>
+					</Link>
 				</div>
 			</div>
 		</div>
