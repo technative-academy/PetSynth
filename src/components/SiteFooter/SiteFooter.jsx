@@ -27,6 +27,7 @@ function SiteFooter() {
 			<span>
 				Licensed under{" "}
 				<a
+					className={styles.licenselink}
 					href="https://github.com/technative-academy/PetSynth/blob/main/LICENSE"
 					target="_blank"
 				>
