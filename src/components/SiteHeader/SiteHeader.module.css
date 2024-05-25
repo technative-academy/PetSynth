@@ -1,6 +1,6 @@
 /* Mobile header styling -- CSS gradient animation */
 .wrapper {
-	padding: 1rem 2rem;
+	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -37,11 +37,8 @@
 @media (max-width: 530px) {
 	.wrapper {
 		height: 57vh;
-		padding: 1rem 1rem;
+		padding: 1rem;
 		gap: 1rem;
-	}
-
-	.siteNav {
 	}
 }
 
@@ -49,11 +46,9 @@
 
 @media (min-width: 768px) {
 	.wrapper {
+		padding: 2rem;
 		height: 55vh;
 		justify-content: flex-start;
-	}
-
-	.siteNav {
 	}
 }
 

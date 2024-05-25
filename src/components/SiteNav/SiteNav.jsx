@@ -44,7 +44,7 @@ function SiteNav() {
 	//logic to display different format nav menu for mobile, to desktop, but also auto revert menu display style upon resize to larger
 	const getNavDisplay = () => {
 		if (isMobile) {
-			return burgerOpen ? "inline-flex" : "none";
+			return burgerOpen ? "flex" : "none";
 		} else {
 			return "flex";
 		}
@@ -55,26 +55,30 @@ function SiteNav() {
 			<Link to="/" className={styles.logoLink}>
 				<h2 className={styles.logo}>Petsynth</h2>
 			</Link>
-			<nav
-				className={styles.links}
-				style={{
-					display: getNavDisplay(),
-				}}
-			>
-				{navLinks.map((navLink) => (
-					<NavLink
-						key={navLink.url}
-						to={navLink.url}
-						className={({ isActive }) =>
-							isActive ? styles.activeLink : styles.inactiveLink
-						}
-					>
-						{navLink.label}
-					</NavLink>
-				))}
-			</nav>
-			<div className={styles.navBurgerMenu} onClick={toggleBurger}>
-				<BurgerMenu isOpen={burgerOpen} />
+			<div className={styles.navContainer}>
+				<div className={styles.navBurgerMenu} onClick={toggleBurger}>
+					<BurgerMenu isOpen={burgerOpen} />
+				</div>
+				<nav
+					className={styles.links}
+					style={{
+						display: getNavDisplay(),
+					}}
+				>
+					{navLinks.map((navLink) => (
+						<NavLink
+							key={navLink.url}
+							to={navLink.url}
+							className={({ isActive }) =>
+								isActive
+									? styles.activeLink
+									: styles.inactiveLink
+							}
+						>
+							{navLink.label}
+						</NavLink>
+					))}
+				</nav>
 			</div>
 		</div>
 	);
