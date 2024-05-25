@@ -241,7 +241,7 @@
 	.productcard {
 		/* border: 3px solid green; */
 		width: 350px;
-		height: 400px;
+		height: auto;
 		margin-top: 50px;
 		display: flex;
 		flex-direction: column;
