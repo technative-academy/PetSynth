@@ -10,7 +10,8 @@ function About() {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.aboutWrapper}>
-				<AboutHero />
+				{/* AboutHero surplus to requirements after header-page title refactor* - cg/}
+				{/* <AboutHero /> */}
 				<div className={styles.aboutContentBox}>
 					<Tabs
 						tabs={[

@@ -9,7 +9,9 @@
 	align-items: center;
 }
 
-/* Page hero container and content styling -- might move later */
+/* Page hero container and content styling -- might move later 
+
+hero styling surplus after header-title refactor by cg
 
 .herocontainer {
 	display: flex;
@@ -29,6 +31,7 @@
 	color: white;
 	font-size: 20px;
 }
+*/
 
 /* Shop page container styling */
 
@@ -178,6 +181,9 @@
 
 /* Desktop styling */
 @media (min-width: 768px) {
+	/* 
+	header-hero-h1 styling is surplus after header-title refactor by cg
+	
 	h1 {
 		font-size: 40px;
 	}
@@ -185,7 +191,7 @@
 	.herocontainer {
 		display: flex;
 		flex-direction: column;
-	}
+	} */
 
 	.productcontainer {
 		display: flex;
