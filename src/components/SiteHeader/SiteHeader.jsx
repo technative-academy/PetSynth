@@ -46,10 +46,10 @@ function SiteHeader() {
 				return (
 					<div className={styles.viewHero}>
 						<h1>Buy the Pets</h1>
-						<p>
+						<h3>
 							We need to sell as many pets as possible to keep
 							PetSynth operating. Take your pick below!
-						</p>
+						</h3>
 					</div>
 				);
 			default:
