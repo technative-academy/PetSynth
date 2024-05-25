@@ -14,6 +14,39 @@
 	animation: gradient 22s ease infinite;
 }
 
+.viewHero {
+	display: block;
+	text-align: center;
+	align-self: top;
+	/* color: red !important; */
+	/* font-size: 30px;
+	z-index: 99; */
+	/* margin: 0 !important; */
+	/* padding: 0 !important; */
+}
+
+.viewHero h1 {
+	font:
+		900 56px/64px "Roboto",
+		"Arial",
+		sans-serif;
+	padding: 0 1rem;
+	margin: 0;
+	color: #fff;
+	background: transparent;
+}
+
+.viewHero h3 {
+	font:
+		400 24px/36px "Roboto",
+		"Arial",
+		sans-serif;
+	padding: 1rem 1rem;
+	margin: 0;
+	text-align: left;
+	color: #fff;
+}
+
 .siteNav {
 }
 
