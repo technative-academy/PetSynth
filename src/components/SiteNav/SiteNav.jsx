@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import styles from "./SiteNav.module.css";
@@ -52,6 +52,9 @@ function SiteNav() {
 
 	return (
 		<div className={styles.wrapper}>
+			<Link to="/" className={styles.logoLink}>
+				<h2 className={styles.logo}>Petsynth</h2>
+			</Link>
 			<nav
 				className={styles.links}
 				style={{

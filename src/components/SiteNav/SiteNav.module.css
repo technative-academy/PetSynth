@@ -1,22 +1,37 @@
 /* Mobile Styling */
 .wrapper {
 	display: flex;
-	flex-direction: column-reverse;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: flex-start;
 	background: transparent;
+	padding: 1rem;
+	width: 100%;
+}
+
+.logo {
+	flex: 2;
+	font-family: "Orbitron", sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 0 auto;
+	padding-top: 1rem;
+	width: auto;
+	color: white;
+}
+
+.logoLink {
+	text-decoration: none;
 }
 
 .links {
 	display: flex;
-	align-self: center;
-
+	flex-direction: row;
 	font:
 		400 16px/24px "Roboto",
 		sans-serif;
 	margin-top: 2vw;
-	margin-left: -100%;
-	width: 100%;
+	width: auto;
 	z-index: 10;
 }
 
@@ -79,11 +94,19 @@
 /* Desktop styling */
 @media (min-width: 768px) {
 	.wrapper {
-		padding: 0.5rem;
+		padding: 1rem;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
 		background: transparent;
+	}
+
+	.logo {
+		/* margin-right: 500px; */
+		font-size: 64px;
+		margin: 0 auto;
+		flex: 1;
 	}
 	.links {
 		display: flex;
