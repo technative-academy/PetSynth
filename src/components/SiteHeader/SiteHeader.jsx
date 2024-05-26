@@ -7,8 +7,6 @@ import styles from "./SiteHeader.module.css";
 function SiteHeader() {
 	const location = useLocation();
 
-	console.log(location.pathname);
-
 	const getHero = () => {
 		switch (location.pathname) {
 			case "/":
