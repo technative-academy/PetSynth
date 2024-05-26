@@ -51,7 +51,15 @@ function SiteHeader() {
 					</div>
 				);
 			default:
-				return "Hi, here is your AI Cooking Assistant";
+				return (
+					<div className={styles.viewHero}>
+						<h1> AI Pet Providers</h1>
+						<h3>
+							Pet generation service to find your puurfect virtual
+							customised companion
+						</h3>
+					</div>
+				);
 		}
 	};
 
