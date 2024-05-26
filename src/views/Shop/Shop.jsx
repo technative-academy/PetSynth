@@ -10,13 +10,14 @@ function Shop() {
 
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.herocontainer}>
+			{/* Below JSX is surplus after header-title refactor by cg */}
+			{/* <div className={styles.herocontainer}>
 				<h1 className={styles.herotitle}>Buy the Pets</h1>
 				<p className={styles.herodesc}>
 					We need to sell as many pets as possible to keep PetSynth
 					operating. Take your pick below!
 				</p>
-			</div>
+			</div> */}
 			<div className={styles.searchcomponent}>
 				<Search onSubmit={handleSearchSubmit} />
 				<ProductResults query={activeQuery} sortMode={activeSortMode} />

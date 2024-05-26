@@ -14,13 +14,6 @@ function Home() {
 	*/
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.contentBoxOne}>
-				<h1> AI Pet Providers</h1>
-				<h3>
-					Pet generation service to find your puurfect virtual
-					customised companion
-				</h3>
-			</div>
 			<div className={styles.primaryContentContainer}>
 				<div className={styles.contentBoxTwo}>
 					<h2>

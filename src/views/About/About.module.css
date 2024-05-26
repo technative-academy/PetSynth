@@ -1,6 +1,4 @@
-/* Mobile First */
-
-.wrapper {
+Mobile First .wrapper {
 	background: white;
 	width: 100%;
 	display: flex;
@@ -15,8 +13,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: -1.75rem;
-	padding: 1rem;
+	margin-top: 7.5rem;
+	padding: 2rem;
 	border-top-right-radius: 1.8rem;
 	border-top-left-radius: 1.8rem;
 	z-index: 20;
@@ -32,7 +30,7 @@
 	margin-top: -220px;
 }
 
-.aboutHero {
+/* .aboutHero {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -40,18 +38,18 @@
 	margin-top: -1.25rem;
 	margin-bottom: 3rem;
 	padding: 0;
-}
+} */
 
-.aboutH1 {
+/* .aboutH1 {
 	margin-top: 0;
-}
+} */
 
-.aboutH3 {
+/* .aboutH3 {
 	max-width: 35ch;
 	margin-left: 1rem;
 	margin: 0 auto;
 	text-align: center;
-}
+} */
 /*  Potentially release if we get round to improving specificity of Home view selectors - class versus element
 .aboutp {
 	font:
@@ -73,12 +71,12 @@
 		max-width: 1000px;
 		box-shadow: 0px 0px 20px 0px rgba(27, 28, 34, 0.1);
 		margin-bottom: 12vh;
-		margin-top: 1.5rem;
+		margin-top: 8.75rem;
 		z-index: 20;
 		background-color: white;
 	}
 
-	.aboutHero {
+	/* .aboutHero {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -86,5 +84,5 @@
 		margin-top: -5.25rem;
 		margin-bottom: 3rem;
 		padding: 0;
-	}
+	} */
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import styles from "./SiteNav.module.css";
@@ -44,7 +44,7 @@ function SiteNav() {
 	//logic to display different format nav menu for mobile, to desktop, but also auto revert menu display style upon resize to larger
 	const getNavDisplay = () => {
 		if (isMobile) {
-			return burgerOpen ? "inline-flex" : "none";
+			return burgerOpen ? "flex" : "none";
 		} else {
 			return "flex";
 		}
@@ -52,26 +52,33 @@ function SiteNav() {
 
 	return (
 		<div className={styles.wrapper}>
-			<nav
-				className={styles.links}
-				style={{
-					display: getNavDisplay(),
-				}}
-			>
-				{navLinks.map((navLink) => (
-					<NavLink
-						key={navLink.url}
-						to={navLink.url}
-						className={({ isActive }) =>
-							isActive ? styles.activeLink : styles.inactiveLink
-						}
-					>
-						{navLink.label}
-					</NavLink>
-				))}
-			</nav>
-			<div className={styles.navBurgerMenu} onClick={toggleBurger}>
-				<BurgerMenu isOpen={burgerOpen} />
+			<Link to="/" className={styles.logoLink}>
+				<h2 className={styles.logo}>Petsynth</h2>
+			</Link>
+			<div className={styles.navContainer}>
+				<div className={styles.navBurgerMenu} onClick={toggleBurger}>
+					<BurgerMenu isOpen={burgerOpen} />
+				</div>
+				<nav
+					className={styles.links}
+					style={{
+						display: getNavDisplay(),
+					}}
+				>
+					{navLinks.map((navLink) => (
+						<NavLink
+							key={navLink.url}
+							to={navLink.url}
+							className={({ isActive }) =>
+								isActive
+									? styles.activeLink
+									: styles.inactiveLink
+							}
+						>
+							{navLink.label}
+						</NavLink>
+					))}
+				</nav>
 			</div>
 		</div>
 	);

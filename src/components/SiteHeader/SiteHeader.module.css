@@ -1,29 +1,52 @@
 /* Mobile header styling -- CSS gradient animation */
 .wrapper {
-	padding: 1rem 2rem;
+	padding: 1rem;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	gap: 2rem;
-	align-items: flex-start;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: flex-start;
 	color: white;
-	height: 75vw;
+	width: 100%;
+	height: 80vw;
 	background: linear-gradient(-45deg, #8900ff, #ffd700, #2e8b57, #8900ff);
 	background-size: 400% 400%;
 	animation: gradient 22s ease infinite;
 }
 
-.logo {
-	flex: 1;
-	font-family: "Orbitron", sans-serif;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-size: 40px;
+.viewHero {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+	align-items: center;
+}
+
+.viewHero h1 {
+	font:
+		900 32px/40px "Roboto",
+		"Arial",
+		sans-serif;
+	padding: 0 1rem;
+	margin: 0;
+	color: #fff;
+	background: transparent;
+	text-align: center;
+}
+
+.viewHero h3 {
+	font:
+		400 18px/24px "Roboto",
+		"Arial",
+		sans-serif;
+	padding: 1rem 1rem;
+	margin: 0;
+	text-align: left;
+	color: #fff;
+	text-align: center;
+	width: 32ch;
 }
 
 .siteNav {
-	flex: 1;
-	padding-right: 4vw;
 }
 
 @keyframes gradient {
@@ -45,19 +68,30 @@
 
 @media (max-width: 530px) {
 	.wrapper {
-		height: 57vh;
-		padding: 1rem 1rem;
+		height: 110vw;
+		padding: 1rem;
 		gap: 1rem;
 	}
+}
 
+/* Table Sizing */
+
+@media (min-width: 600px) {
 	.logo {
-		/* margin-right: 500px; */
-		margin: 0;
-		font-size: 24px;
+		font-size: 3rem;
+	}
+	.viewHero h1 {
+		font:
+			900 40px/48px "Roboto",
+			"Arial",
+			sans-serif;
 	}
 
-	.siteNav {
-		flex: 1;
+	.viewHero h3 {
+		font:
+			400 24px/36px "Roboto",
+			"Arial",
+			sans-serif;
 	}
 }
 
@@ -65,19 +99,22 @@
 
 @media (min-width: 768px) {
 	.wrapper {
-		height: 55vh;
-		justify-content: space-evenly;
+		padding: 2rem;
+		height: 30rem;
+		justify-content: flex-start;
+	}
+	.viewHero h1 {
+		font:
+			900 56px/64px "Roboto",
+			"Arial",
+			sans-serif;
 	}
 
-	.logo {
-		/* margin-right: 500px; */
-		font-size: 64px;
-		margin-top: 1rem;
-		flex: 2;
-	}
-
-	.siteNav {
-		flex: 1;
+	.viewHero h3 {
+		font:
+			400 24px/36px "Roboto",
+			"Arial",
+			sans-serif;
 	}
 }
 
